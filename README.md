@@ -11,7 +11,7 @@ Hi, I am trying to become a nice developer 😎
 
 <br/>
 
-<a href="https://app.daily.dev/june75"><img src="https://github.com/blackjune67/blackjune67/blob/main/devcard.svg" width="400" alt="June's Dev Card"/></a>
+<a href="https://app.daily.dev/june75"><img src="./devcard.png" width="356" alt="June's Dev Card"/></a>
 
 
 ### :blue_book: Blog
