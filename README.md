@@ -41,7 +41,7 @@ Hi, I am trying to become a nice developer 😎
 <br/>
 
 ### :pencil2: Study
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![JUNE GitHub stats](https://github-readme-stats.vercel.app/api?username=blackjune67)](https://github.com/anuraghazra/github-readme-stats)
 </div>
 
 <!--
