@@ -39,10 +39,11 @@ Hi, I am trying to become a nice developer 😎
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white">
 
 <br/>
-
+<!-- 
 ### :pencil2: Study
 [![JUNE GitHub stats](https://github-readme-stats.vercel.app/api?username=blackjune67)](https://github.com/anuraghazra/github-readme-stats)
 </div>
+-->
 
 <!--
 Here are some ideas to get you started:
