@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" fill="none" role="img" aria-label="June — 문제를 해결하는 개발자">
+  <title>June — 문제를 해결하는 개발자</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="880" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3f7fb"/>
+    </linearGradient>
+    <radialGradient id="auroraTeal" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nameGrad" x1="54" y1="150" x2="270" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d9488"/>
+      <stop offset="0.55" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#0f172a" opacity="0.05"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="0.5" y="0.5" width="879" height="299" rx="16"/>
+    </clipPath>
+    <clipPath id="typeClip">
+      <rect x="78" y="222" width="0" height="36">
+        <animate attributeName="width" begin="1s" dur="1.4s" fill="freeze" calcMode="discrete"
+          values="0;19.2;38.4;57.6;76.8;96;115.2;134.4;153.6;172.8;192;211.2"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, sans-serif; }
+    .mono { font-family: 'Cascadia Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .fadeUp { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.3s; }
+    .d3 { animation-delay: 0.5s; } .d4 { animation-delay: 0.7s; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .caret { animation: blink 1.1s steps(1) infinite 1s; }
+    @keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+    .solved { opacity: 0; animation: appear 0.5s ease-out 2.7s forwards; }
+    @keyframes appear { to { opacity: 1; } }
+    .check { stroke-dasharray: 30; stroke-dashoffset: 30; animation: draw 0.45s ease-out 2.8s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .aurora { animation: drift 12s ease-in-out infinite alternate; }
+    .aurora.slow { animation-duration: 16s; animation-delay: -6s; }
+    @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(-36px, 20px); } }
+    .star { animation: twinkle 3.2s ease-in-out infinite; }
+    .s2 { animation-delay: 0.6s; } .s3 { animation-delay: 1.2s; }
+    .s4 { animation-delay: 1.8s; } .s5 { animation-delay: 2.4s; } .s6 { animation-delay: 0.9s; }
+    @keyframes twinkle { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.6; } }
+    @media (prefers-reduced-motion: reduce) {
+      .fadeUp, .solved { opacity: 1; animation: none; }
+      .check { stroke-dashoffset: 0; animation: none; }
+      .aurora, .star, .caret { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="880" height="300" fill="url(#bg)"/>
+    <rect width="880" height="300" fill="url(#dots)"/>
+    <g class="aurora">
+      <ellipse cx="760" cy="40" rx="300" ry="180" fill="url(#auroraTeal)"/>
+      <ellipse cx="880" cy="230" rx="280" ry="200" fill="url(#auroraViolet)"/>
+    </g>
+    <g class="aurora slow">
+      <ellipse cx="180" cy="310" rx="320" ry="170" fill="url(#auroraBlue)"/>
+    </g>
+
+    <g fill="#7c3aed">
+      <circle class="star"    cx="632" cy="62"  r="1.6"/>
+      <circle class="star s2" cx="716" cy="118" r="1.3"/>
+      <circle class="star s3" cx="788" cy="52"  r="2"/>
+      <circle class="star s4" cx="842" cy="150" r="1.4"/>
+      <circle class="star s5" cx="690" cy="200" r="1.6"/>
+      <circle class="star s6" cx="826" cy="96"  r="1.2"/>
+    </g>
+
+    <text class="mono fadeUp d1" x="56" y="82" font-size="15" fill="#6e7781">// hello problem, goodbye problem 👋</text>
+
+    <g class="fadeUp d2">
+      <text x="54" y="150" font-size="74" font-weight="800" letter-spacing="-2" fill="url(#nameGrad)">June</text>
+      <text x="238" y="146" font-size="21" fill="#57606a">aka 준수한쭌 🧐</text>
+    </g>
+
+    <text class="fadeUp d3" x="56" y="190" font-size="20">
+      <tspan fill="#1f2328" font-weight="600">문제를 해결하는 개발자</tspan>
+      <tspan fill="#57606a"> — Backend Engineer · Java · Spring · Kotlin, 그리고 AI 도구</tspan>
+    </text>
+
+    <g class="fadeUp d4">
+      <rect x="56" y="212" width="560" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+      <circle cx="76" cy="226" r="3.5" fill="#ff5f57"/>
+      <circle cx="88" cy="226" r="3.5" fill="#febc2e"/>
+      <circle cx="100" cy="226" r="3.5" fill="#28c840"/>
+      <g clip-path="url(#typeClip)">
+        <text class="mono" x="78" y="249" font-size="16" fill="#24292f">$ june solve ./problem</text>
+      </g>
+      <rect class="caret" x="78" y="235" width="8" height="17" fill="#0d9488">
+        <animate attributeName="x" begin="1s" dur="1.4s" fill="freeze" calcMode="discrete"
+          values="80;99.2;118.4;137.6;156.8;176;195.2;214.4;233.6;252.8;272;291.2"/>
+      </rect>
+      <g class="solved">
+        <path class="check" d="M318 243 l6 6 l12 -13" stroke="#0d9488" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <text class="mono" x="344" y="249" font-size="15" font-weight="700" fill="#0d9488">solved</text>
+        <text class="mono" x="410" y="249" font-size="14" fill="#6e7781">— 다음 문제 찾는 중…</text>
+      </g>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="879" height="299" rx="16" stroke="#d0d7de"/>
+</svg>

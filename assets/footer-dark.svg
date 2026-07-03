@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" fill="none" role="img" aria-label="thanks for visiting">
+  <title>thanks for visiting</title>
+  <defs>
+    <linearGradient id="waveA" x1="0" y1="150" x2="880" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="0" y1="150" x2="880" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#3b82f6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0.5"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="880" height="150" rx="16"/></clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'Cascadia Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .wave { animation: sway 7s ease-in-out infinite alternate; }
+    .wave.back { animation-duration: 10s; animation-delay: -4s; }
+    @keyframes sway { from { transform: translateX(0); } to { transform: translateX(-40px); } }
+    .fade { opacity: 0; animation: fade 1.2s ease-out 0.2s forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .wave { animation: none; } .fade { opacity: 1; animation: none; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="880" height="150" fill="#0d1117"/>
+    <g class="wave back">
+      <path d="M-40 108 Q 70 84 180 104 T 400 100 T 620 106 T 840 98 T 1060 104 L 1060 150 L -40 150 Z" fill="url(#waveA)"/>
+    </g>
+    <g class="wave">
+      <path d="M-40 122 Q 70 100 180 118 T 400 114 T 620 120 T 840 112 T 1060 118 L 1060 150 L -40 150 Z" fill="url(#waveB)"/>
+    </g>
+    <text class="mono fade" x="440" y="58" text-anchor="middle" font-size="15" fill="#8b949e">$ git commit -m "readme: 와줘서 고마워요 👋"</text>
+    <text class="mono fade" x="440" y="84" text-anchor="middle" font-size="12" fill="#484f58">— june, 오늘도 문제 하나 해결하러 갑니다</text>
+  </g>
+</svg>

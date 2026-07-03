@@ -1,0 +1,21 @@
+name: latest-blog-posts
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: update blog post list
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://jjunii486.tistory.com/rss"
+          max_post_count: 5
+          date_format: "yyyy.mm.dd"
+          template: "- **[$title]($url)** <sub>$date</sub>$newline"
+          commit_message: "chore: update latest blog posts"
