@@ -1,11 +1,10 @@
 name: latest-blog-posts
+# 티스토리 RSS가 GitHub 러너 요청을 406으로 차단해 잠정 비활성화 (수동 실행만 가능).
+# 추후 연동 시 아래 트리거를 복구하세요:
+#   push: { branches: [main] }
+#   schedule: [{ cron: "0 */12 * * *" }]
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "0 */12 * * *"
 jobs:
   update-readme:
     runs-on: ubuntu-latest

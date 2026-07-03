@@ -137,14 +137,18 @@
 
 <br/>
 
+<!--
+  📝 blog section — 티스토리 RSS 연동 준비 중 (추후 활성화)
+  활성화 방법: 아래 주석을 풀고 마커를 HTML 주석 형태(<!── BLOG-POST-LIST:START ──>)로 되돌린 뒤,
+  .github/workflows/blog-posts.yml 의 schedule/push 트리거를 복구하면 됩니다.
+
 ## <samp>$ tail -f blog.log</samp>
 
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+BLOG-POST-LIST:START
+BLOG-POST-LIST:END
 
 <div align="right"><sub>🕛 12시간마다 <a href="https://jjunii486.tistory.com/">준수한쭈니네</a>에서 자동으로 가져옵니다</sub></div>
-
-<br/>
+-->
 
 ## <samp>$ ping june</samp>
 
