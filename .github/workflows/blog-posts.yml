@@ -12,7 +12,7 @@ jobs:
       contents: write
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: update blog post list
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
